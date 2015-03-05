@@ -49,7 +49,7 @@
 			var query = "q=" + $("#city").val();
 			console.log("querying for [" + query + "]");
 
-			var cityURL = "https://students.cs.byu.edu/~clement/CS360/ajax/getcity.cgi?" + query;
+			var cityURL = "http://52.10.232.86/getcity?" + query;
 
 			$.getJSON(cityURL, function(data) {
 				var suggestions = "";
